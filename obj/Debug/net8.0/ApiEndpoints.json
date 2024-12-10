@@ -1,0 +1,102 @@
+[
+  {
+    "ContainingType": "Mds.WebApi.Controllers.CalculationsController",
+    "Method": "GetStocks",
+    "RelativePath": "api/Calculations/Stocks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DateFrom",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "DateTo",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "CompanyId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mds.WebApi.Controllers.StocksController",
+    "Method": "AddStock",
+    "RelativePath": "api/Stocks/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Mds.WebApi.Models.Api.AddStockRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mds.WebApi.Controllers.StocksController",
+    "Method": "DeleteStocks",
+    "RelativePath": "api/Stocks/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Mds.WebApi.Models.Api.DeleteStockRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mds.WebApi.Controllers.StocksController",
+    "Method": "EditStocks",
+    "RelativePath": "api/Stocks/Edit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Mds.WebApi.Models.Api.EditStockRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Mds.WebApi.Controllers.StocksController",
+    "Method": "GetStocks",
+    "RelativePath": "api/Stocks/Get",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "DateFrom",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "DateTo",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "CompanyId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

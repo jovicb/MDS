@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .  # Koristi trenutni direktorijum kao kontekst za izgradnju
+      dockerfile: Dockerfile
+    ports:
+      - "5000:80"  # Spoljni port 5000 mapiran na unutrašnji 80
+    environment:
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=MDS;User=sa;Password=Test123;
+    depends_on:
+      - sqlserver  # Zavisnost od sqlserver servisa
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    ports:
+      - "1433:1433"  # Port za SQL Server
+    environment:
+      SA_PASSWORD: "Test123"  # Postavka šifre za SA korisnika
+      ACCEPT_EULA: "Y"  # Prihvatanje EULA

@@ -1,0 +1,6 @@
+@Mds.WebApi_HostAddress = http://localhost:5227
+
+GET {{Mds.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
